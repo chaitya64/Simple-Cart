@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Cart</title>
+    </head>
+    <style>
+        .cart-page{
+            margin:10px auto;
+        }
+        
+        table{
+            width:75%;
+           
+        }
+        .cart-info{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        th{
+            margin-right:auto;
+            text-align: left;
+            padding: 2px;
+            font-size: large;
+            color:rgb(67, 15, 189);
+        }
+        td{
+            padding: 10px 5px;
+
+        }
+        td input{
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+        td img{
+            width:200px;
+            height:200px;
+            margin-right: 10px;
+
+        }
+        .total-price{
+            display: flex;
+            justify-content:center;
+
+        }
+        .total-price table{
+            width: 100%;
+            max-width: 600px;
+            border-top: 5px solid #ff534f;
+        }
+        .total-price td{
+            text-align: end;
+        }
+        .checkout{
+            float:left ;
+            padding: 6px 25px;
+            margin-top: 10px;
+            width: 40%;
+            background-color: chartreuse;
+        }
+        a{
+            color:red;
+        }
+    </style>
+    <body>
+       <center><h1>Cart</h1></center> 
+       <hr size="4" color="black">
+        <a href="">Remove All</a>
+        <div class="cart-page">
+            <table><tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub-total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="D:\store\images\Book4.jpg">
+                        <div>
+                            <p>Sharp Objects</p>
+                            <small>Price: Rs.838.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                            <br>
+                            <a href="">Add To Favourites</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs.838.00</td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="D:\store\images\Book1.jpg">
+                        <div>
+                            <p>The Lucy Poems</p>
+                            <small>Price: Rs.446.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                            <br>
+                            <a href="">Add To Favourites</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs.838.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs.1284.00</td>  
+                </tr>
+            </table>            
+        </div>
+        <button class="checkout">Checkout</button>
+        </div>
+    </body>
+</html>
